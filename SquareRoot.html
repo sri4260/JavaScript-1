@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Square root of a number:</h3>
+</body>
+<script>
+function findSquareRoot(number) {
+    if (number < 0) {
+        return "Square root of a negative number is not a real number.";
+    }
+    return Math.sqrt(number);
+}
+
+let num = 625;
+let squareRoot = findSquareRoot(num);
+document.write(`The square root of ${num} is ${squareRoot}`);
+
+</script>
+</html>

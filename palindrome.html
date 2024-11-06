@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+function generateFibonacci(n) {
+    let fibSeries = [];
+    let a = 0, b = 1, nextTerm;
+
+    for (let i = 1; i <= n; i++) {
+        fibSeries.push(a); 
+        nextTerm = a + b;  
+        a = b;             
+        b = nextTerm;     
+    }
+
+    return fibSeries;
+}
+
+
+let terms = 10;
+document.write(`Fibonacci series with ${terms} terms: `, generateFibonacci(terms));
+
+</script>
+</html>

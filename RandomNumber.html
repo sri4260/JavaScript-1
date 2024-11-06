@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3>Random Numbers</h3>
+<body>
+<script>
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+let min = 5; 
+let max = 15;  
+let randomInt = getRandomInteger(min, max);
+document.write(`Random integer between ${min} and ${max} is : ${randomInt}`);
+
+</script>
+</body>
+</html>

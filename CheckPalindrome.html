@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3>Palindrome Number or not:</h3>
+<body>
+<script>
+    function isPalindrome(str) {
+        let reversed = str.split('').reverse().join('');
+        return str === reversed;
+    }
+    
+    let inputString = "madam";
+    document.write(isPalindrome(inputString) ? "It's a palindrome." : "It's not a palindrome.");
+    
+</script>
+</body>
+</html>
